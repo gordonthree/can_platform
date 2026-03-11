@@ -1,5 +1,7 @@
 #pragma once
 
+#include "canbus_project.h"
+
 #ifdef ESP32
     #include "driver/twai.h"
     typedef twai_message_t can_msg_t;
@@ -15,7 +17,6 @@
 extern "C" {
 #endif
 
-#define CAN_MAX_DLC     8
 
 can_msg_t toCanMsg(const twai_message_t *msg);
 twai_message_t toTwaiMsg(const can_msg_t *msg);
