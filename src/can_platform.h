@@ -1,6 +1,6 @@
 #pragma once
-
-#include "canbus_project.h"
+#include <string.h>             // for memset
+#include "canbus_project.h"     // for nodeInfo_t and subModule_t
 
 #ifdef ESP32
     #include "driver/twai.h"
