@@ -11,6 +11,7 @@ typedef struct {
     uint32_t identifier;
     uint8_t  data_length_code;
     uint8_t  data[8];
+    bool     isLocal;
 } can_msg_t;
 
 
