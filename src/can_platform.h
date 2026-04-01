@@ -12,6 +12,7 @@ typedef struct {
     uint8_t  data_length_code;
     uint8_t  data[8];
     bool     isLocal;
+    bool     isSynthetic;
 } can_msg_t;
 
 
